@@ -339,18 +339,20 @@ class User{
     }
 
    
+    
 }
 
-
-console.log("----------------------------------");
-let admin=User.createAdmin("admin","Male",22);
-
-//console.log(adminObj)
-let user1=admin.createUser("Dhruv","Male",20);
-user1.createContact("Nikul","India");
-user1.createContact("Jigna","India");
+let admin=User.createAdmin("SuswarAdmin","Male",22);
+let user1=admin.createUser("Nikunj","Male",21);
+let user2=admin.createUser("Pratik","Male",21);
+let user3=admin.createUser("pooja","female",21);
+user1.createContact("Dhurv","India");
+user1.createContact("Sanjana","India");
 console.log(user1);
-admin.updateUser(9,"fullName","aaaa");
+console.log(user2);
+console.log(user3);
+
+admin.updateUser(5,"fullName","TAI");
 
 
 //user1.updateContact(0,"country","Australia");
